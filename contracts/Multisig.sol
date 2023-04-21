@@ -84,7 +84,6 @@ contract Multisig {
                 }
             }
         }
-        console.log(signed);
         return signed;
     }
 

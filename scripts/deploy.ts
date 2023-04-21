@@ -35,12 +35,9 @@ async function main() {
         [ nonce, multisig.address, target.address, payload ]
     ))
 
-    console.log("message:\n", message)
-    console.log("message.length: ", message.length)
+    // console.log("message:\n", message)
+    // console.log("message.length: ", message.length)
     
-    // получаем хеш сообщения - это именно та штуку, которая подписывается функцией signMessage()
-    const hashMessage = ethers.utils.hashMessage(message)
-    console.log("hashMessage: ", hashMessage)
 
     let signatures: {
         v: number[],
